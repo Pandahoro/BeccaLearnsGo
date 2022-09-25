@@ -1,0 +1,60 @@
+consumes:
+- application/json
+info:
+  description: HTTP server in Go with Swagger endppoints definition
+  title: go-rest-api
+  version: 0.1.0
+produces:
+- application/json
+schemes:
+- http
+swagger: "2.0"
+
+paths:
+  /healthz:
+    get:
+      operationId: checkHealth
+      produces:
+      - text/plain
+      responses:
+        '200':
+          description: OK message.
+          schema:
+            type: string
+            enum:
+            - OK
+  
+  /hello/{user}:
+    get:
+      description: Returns a greeting to the user
+      parameters:
+        - name: user
+          in: path
+          type: string
+          required: true
+          description: the name of the user to greeting
+      responses:
+        200:
+          description: Returns greeting
+          schema:
+            type: string
+        400:
+          description: invalid characters in "user" provided
+  
+  /cat/{name}:
+    get:
+      description: Return the cat
+      produces:
+      - image/gif
+      parameters:
+        - name: name
+          in: path
+          type: string
+          required: true
+          description: the name of the cat to desplay
+      responses:
+        200:
+          description: Returns cat
+          schema:
+            type: file
+            
