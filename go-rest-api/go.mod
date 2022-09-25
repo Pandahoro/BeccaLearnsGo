@@ -1,3 +1,3 @@
-module github.com/PandaHoro/BeccaLearnsGO/go-rest-api
+module github.com/PandaHoro/BeccaLearnsGo/go-rest-api
 
 go 1.18
