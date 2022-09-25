@@ -4,7 +4,7 @@ tasks:
   build:
       desc: Build the app
       cmds:
-        - GOFLAGS=-mod=mod go build - o bin/go-rest-api internal/main.go
+        - GOFLAGS=-mod=mod go build -o bin/go-rest-api internal/main.go
 
   run:
     desc: Run the app
@@ -14,7 +14,7 @@ tasks:
   swagger.gen:
     desc: Generate Go code
     cmds:
-      - GOFLAGS=-mod= go generate github.com/PandaHoro/BeccaLearnsGo/go-rest-api/internal https://github.com/Pandahoro/BeccaLearnsGo/go-rest-api/pkg/swagger
+      - GOFLAGS=-mod=mod go generate github.com/PandaHoro/BeccaLearnsGo/go-rest-api/internal https://github.com/Pandahoro/BeccaLearnsGo/go-rest-api/pkg/swagger
 
   swagger.validate:
     desc: Validate swagger
