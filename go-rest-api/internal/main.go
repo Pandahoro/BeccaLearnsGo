@@ -33,7 +33,7 @@ func main() {
 
 	api.CheckHealthHandler = operations.CheckHealthHandlerFunc(Health)
 
-	api.GetHelloUserHandler = operations.GetHelloUserHandlerFunc(GetHellowUser)
+	api.GetHelloUserHandler = operations.GetHelloUserHandlerFunc(GetHelloUser)
 
 	api.GetCatNameHandler = operations.GetCatNameHandlerFunc(GetCatByName)
 
@@ -65,7 +65,8 @@ func GetCatByName(cat operations.GetCatNameParams) middleware.Responder {
 		URL = "https://github.com/Pandahoro/cats/raw/main" + cat.Name + ".gif"
 	} else {
 		// by defaut return sad cat
-		URL = "https://github.com/Pandahoro/cats/raw/main/SadCatto.gif"
+		URL = "https://github.com/Pandahoro/cats/raw/main￼
+		/SadCatto.gif"
 	}
 	
 	response, err := http.Get(URL)
