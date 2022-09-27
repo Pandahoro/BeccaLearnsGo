@@ -149,11 +149,11 @@ func init() {
         },
         "path": {
           "type": "string",
-          "example": "my-cat.png"
+          "example": "my-cat.gif"
         },
         "url": {
           "type": "string",
-          "example": "https://raw.githubusercontent.com/Pandahoro/cats/main/arrow-cat.png"
+          "example": "https://raw.githubusercontent.com/Pandahoro/cats/main/arrow-cat.gif"
         }
       }
     }
@@ -291,11 +291,11 @@ func init() {
         },
         "path": {
           "type": "string",
-          "example": "my-cat.png"
+          "example": "my-cat.gif"
         },
         "url": {
           "type": "string",
-          "example": "https://raw.githubusercontent.com/Pandahoro/cats/main/arrow-cat.png"
+          "example": "https://raw.githubusercontent.com/Pandahoro/cats/main/arrow-cat.gif"
         }
       }
     }

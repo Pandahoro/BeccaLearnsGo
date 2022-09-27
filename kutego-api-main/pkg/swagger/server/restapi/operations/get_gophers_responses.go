@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/gaelleacas/kutego-api/pkg/swagger/server/models"
+	"github.com/Pandahoro/kutego-api/pkg/swagger/server/models"
 )
 
 // GetCatsOKCode is the HTTP code returned for type GetCatsOK

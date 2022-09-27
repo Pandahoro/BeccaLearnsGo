@@ -14,7 +14,7 @@ http://localhost:8080/cat/random?size=[x-small,small,medium]
 ```
 
 
-![Cat McFly](https://raw.githubusercontent.com/Pandahoro/cats/main/back-to-the-future-v2.png)
+![Cat McFly](https://raw.githubusercontent.com/Pandahoro/cats/main/back-to-the-future-v2.gif)
 
 ## Deploy to Cloud Run
 
@@ -62,21 +62,21 @@ $ curl http://localhost:8080/cats
 [
   {
     "name": "5eme-element",
-    "path": "5eme-element.png",
-    "url": "https://raw.githubusercontent.com/Pandahoro/cats/main/5eme-element.png"
+    "path": "5eme-element.gif",
+    "url": "https://raw.githubusercontent.com/Pandahoro/cats/main/5eme-element.gif"
   },
   {
     "name": "arrow-cat",
-    "path": "arrow-cat.png",
-    "url": "https://raw.githubusercontent.com/Pandahoro/cats/main/arrow-cat.png"
+    "path": "arrow-cat.gif",
+    "url": "https://raw.githubusercontent.com/Pandahoro/cats/main/arrow-cat.gif"
   },
 
   [...]
 
   {
     "name": "back-to-the-future-v2",
-    "path": "back-to-the-future-v2.png",
-    "url": "https://raw.githubusercontent.com/Pandahoro/cats/main/back-to-the-future-v2.png"
+    "path": "back-to-the-future-v2.gif",
+    "url": "https://raw.githubusercontent.com/Pandahoro/cats/main/back-to-the-future-v2.gif"
   }
 ]
 ```
@@ -86,8 +86,8 @@ $ curl http://localhost:8080/cats?name=5eme-element
 [
   {
     "name": "5eme-element",
-    "path": "5eme-element.png",
-    "url": "https://raw.githubusercontent.com/Pandahoro/cats/main/5eme-element.png"
+    "path": "5eme-element.gif",
+    "url": "https://raw.githubusercontent.com/Pandahoro/cats/main/5eme-element.gif"
   }
 ]
 ```

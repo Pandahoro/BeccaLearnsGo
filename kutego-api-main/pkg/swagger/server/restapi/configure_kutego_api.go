@@ -10,7 +10,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/gaelleacas/kutego-api/pkg/swagger/server/restapi/operations"
+	"github.com/Pandahoro/kutego-api/pkg/swagger/server/restapi/operations"
 )
 
 //go:generate swagger generate server --target ../../server --name KutegoAPI --spec ../../swagger.yml --principal interface{} --exclude-main

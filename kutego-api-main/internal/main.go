@@ -18,9 +18,9 @@ import (
 
 	"github.com/disintegration/imaging"
 	"github.com/fogleman/gg"
-	"github.com/gaelleacas/kutego-api/pkg/swagger/server/models"
-	"github.com/gaelleacas/kutego-api/pkg/swagger/server/restapi"
-	"github.com/gaelleacas/kutego-api/pkg/swagger/server/restapi/operations"
+	"github.com/Pandahoro/kutego-api/pkg/swagger/server/models"
+	"github.com/Pandahoro/kutego-api/pkg/swagger/server/restapi"
+	"github.com/Pandahoro/kutego-api/pkg/swagger/server/restapi/operations"
 	"github.com/go-openapi/loads"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/google/go-github/v37/github"
@@ -74,10 +74,10 @@ func GetCatName(cat operations.GetCatNameParams) middleware.Responder {
 
 	var URL string
 	if cat.Name != "" {
-		URL = "https://github.com/Pandahoro/cats/raw/main/" + cat.Name + ".png"
+		URL = "https://github.com/Pandahoro/cats/raw/main/" + cat.Name + ".gif"
 	} else {
 		//by default we return Gandalf cat
-		URL = "https://github.com/Pandahoro/cats/raw/main/fire-cat.png"
+		URL = "https://github.com/Pandahoro/cats/raw/main/SadCatto.gif"
 	}
 
 	response, err := http.Get(URL)
@@ -137,7 +137,7 @@ func GetCatRandom(cat operations.GetCatRandomParams) middleware.Responder {
 	var index int
 	index = rand.Intn(len(arr) - 1)
 
-	URL = "https://github.com/Pandahoro/cats/raw/main/" + arr[index].Name + ".png"
+	URL = "https://github.com/Pandahoro/cats/raw/main/" + arr[index].Name + ".gif"
 
 	response, err := http.Get(URL)
 	if err != nil {
@@ -165,7 +165,7 @@ Display Fire Cat with a message (error)
 func getFireCatError(message string) (image.Image, error) {
 
 	// Open local file
-	file, err := os.Open("./assets/fire-cat.png")
+	file, err := os.Open("./assets/fire-cat.gif")
 	if err != nil {
 		log.Fatalf("failed to Open fire-cat image: %v", err)
 	}

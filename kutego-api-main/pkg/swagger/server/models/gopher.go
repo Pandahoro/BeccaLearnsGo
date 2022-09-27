@@ -22,11 +22,11 @@ type Cat struct {
 	Name string `json:"name,omitempty"`
 
 	// path
-	// Example: my-cat.png
+	// Example: my-cat.gif
 	Path string `json:"path,omitempty"`
 
 	// url
-	// Example: https://raw.githubusercontent.com/Pandahoro/cats/main/arrow-cat.png
+	// Example: https://raw.githubusercontent.com/Pandahoro/cats/main/arrow-cat.gif
 	URL string `json:"url,omitempty"`
 }
 

@@ -1,4 +1,4 @@
-module github.com/gaelleacas/kutego-api
+module github.com/Pandahoro/kutego-api
 
 go 1.16
 
